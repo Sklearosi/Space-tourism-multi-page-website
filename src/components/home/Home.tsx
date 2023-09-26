@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div>
@@ -21,9 +23,9 @@ const Home = () => {
             className="hidden xl:block xl:absolute top-0 right-0 bottom-0 left-0 m-auto bg-white opacity-10
             w-0 h-0 rounded-full group-hover:w-[450px] group-hover:h-[450px] transition-all duration-500"
           ></div>
-          <button className="w-[150px] h-[150px] bg-white text-center font-[400] text-[20px] font-[Bellefair] block m-auto rounded-full text-[#0B0D17] mt-16 md:w-[242px] md:h-[242px] md:text-[32px] md:font-[400] z-10 xl:absolute xl:top-0 xl:right-0 xl:bottom-0 xl:left-0 xl:m-auto">
+          <Link to="/destination" className="w-[150px] h-[150px] bg-white text-center font-[400] text-[20px] font-[Bellefair]  m-auto rounded-full text-[#0B0D17] mt-16 md:w-[242px] md:h-[242px] md:text-[32px] md:font-[400] z-10 xl:absolute xl:top-0 xl:right-0 xl:bottom-0 xl:left-0 xl:m-auto flex justify-center items-center">
             EXPLORE
-          </button>
+          </Link>
         </div>
       </div>
     </div>

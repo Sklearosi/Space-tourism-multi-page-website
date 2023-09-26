@@ -4,6 +4,7 @@ import Home from "./components/home/Home";
 import { useEffect, useState } from "react";
 import Destination from "./components/destination/Destination";
 import Crew from "./components/crew/Crew";
+import Technology from "./components/technology/Technology";
 
 function App() {
   const [size, setSize] = useState<string>("mobile");
@@ -45,6 +46,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/destination/*" element={<Destination />} />
         <Route path="/crew/*" element={<Crew/>} />
+        <Route path="/technology/*" element={<Technology/>} />
       </Routes>
     </div>
   );
