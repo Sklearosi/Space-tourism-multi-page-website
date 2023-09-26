@@ -3,6 +3,7 @@ import { Routes, Route} from 'react-router-dom';
 import Home from "./components/home/Home";
 import { useEffect, useState } from "react";
 import Destination from "./components/destination/Destination";
+import Crew from "./components/crew/Crew";
 
 function App() {
   const [size, setSize] = useState<string>("mobile");
@@ -43,6 +44,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destination/*" element={<Destination />} />
+        <Route path="/crew/*" element={<Crew/>} />
       </Routes>
     </div>
   );
