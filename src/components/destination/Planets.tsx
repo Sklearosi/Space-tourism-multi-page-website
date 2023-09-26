@@ -20,7 +20,7 @@ const Planets: React.FC<{ destinations: DestinationType[] }> = ({
       {selectedDestination ? (
         <div className="mt-10 w-[70%] m-auto xl:flex xl:w-[75%] xl:justify-between xl:items-center xl:mt-20">
           <img src={`https://apiforplanets-production.up.railway.app/${selectedDestination.images.png}`} alt=""  className=" w-[170px] h-[170px] m-auto md:w-[300px] md:h-[300px] md:mt-10 xl:w-[435px] xl:h-[435px]"/>
-          <div className=" mt-5 w-[40%]">
+          <div className=" mt-5 xl:w-[40%]">
             <div className=" border-b border-white pb-10 xl:pb-24">
         <ul className=" flex w-[237px] justify-between pb-3 m-auto xl:w-[285px] xl:justify-start xl:gap-10 xl:m-0">
           {destinations.map((planetName) => (
@@ -31,7 +31,7 @@ const Planets: React.FC<{ destinations: DestinationType[] }> = ({
             </Link>
           ))}
         </ul>
-            <h1 className=" uppercase text-[56px] font-[400] font-[Bellefair] text-white text-center mt-2 xl:mt-10">{selectedDestination.name}</h1>
+            <h1 className=" uppercase text-[56px] font-[400] font-[Bellefair] text-white text-center mt-2 xl:mt-10 xl:text-left">{selectedDestination.name}</h1>
             <p className=" text-[15px] text-center font-[400] font-[Bellefair] opacity-90 text-white mt-3 xl:text-left">{selectedDestination.description}</p>
             </div>
             <div className=" text-white text-center font-[Bellefair] grid gap-6 mt-7 mb-10 md:flex md:justify-evenly xl:text-left">
